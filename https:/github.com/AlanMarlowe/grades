@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+
+	int marks;
+
+	while (1)
+
+	{
+		cout << "\n=========================================";
+		cout << "\nEnter The Marks Between 0 To 100:";
+		cout << "\n=========================================\n";
+
+		cout << "\nEnter The Mark: ";
+		cin >> marks;
+
+		if (marks > 100)
+		{ 
+			cout << "\nDon't Be Smart Enter your Marks Between Limit\n";
+		}
+		else
+		{
+			switch (marks / 10)
+			{
+				case 10:
+				case 9:
+			
+					cout << "\n=============================";
+					cout << "\nYour Grade Is: A or Excellent";
+					cout << "\n=============================";
+					break;
+				case 8:
+				case 7:
+				
+					cout << "\n=============================";
+					cout << "\nYour Grade Is: B or Very Good";
+					cout << "\n=============================";
+					break;
+				case 6:
+		
+					cout << "\n========================";
+					cout << "\nYour Grade Is: C or Fair";
+					cout << "\n========================";
+					break;
+				case 5:
+				case 4:
+				
+					cout << "\n========================";
+					cout << "\nYour Grade Is: D or Pass";
+					cout << "\n========================";
+					break;
+				default:
+				
+					cout << "\n================================================";
+					cout << "\nYou Grade Is: F or Fail\n";
+					cout << "\nSuggestion: Do Not show your Sheet to Your Parent";
+					cout << "\n================================================";
+			}
+		}
+	}
+
+	return 0;
+}
